@@ -1,0 +1,113 @@
+@media (max-device-width: 680px) {
+    header .itens-header {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header .itens-header li {
+      padding-left: 20px;
+    }
+  
+    header .logo img {
+      max-width: 70%;
+    }
+  
+    .img-h1 img {
+      max-width: 100%;
+    }
+
+    .sec-2 img {
+      width: 80%;
+    }
+  
+    .sec-noiva img {
+      width: 100%;
+    }
+  
+    .sec-madrinha img {
+      width: 100%;
+    }
+  
+    .sec-festa img {
+      width: 100%;
+    }
+  
+    .img-nossa-hist img {
+      max-width: 80%;
+    }
+  
+    .img-nossa-hist{ 
+        padding-bottom: 5px;
+    }
+
+    .sec-historia #h1-historia {
+      padding: 1px 20px 20px 10px;
+      font-size: 14pt;
+    }
+  
+    .sec-historia .btn-teste {
+        max-width: 40%;
+        max-height: 40%;;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sec-historia .btn-teste h1 { 
+        font-size: 10pt;
+    }
+  
+    .sec-historia .btn-teste #btn-saibamais {
+      padding: 8px 20px;
+      width: auto;
+    }
+  
+    .sec-historia .btn-teste a {
+      font-size: 10pt;
+    }
+  
+    .sec-endereco {
+      padding-left: 30px;
+    }
+  
+    .sec-enderecoimg{ 
+        padding-top: 20px;
+    }
+
+    .sec-enderecoimg img {
+      max-width: 80%;
+    }
+  
+    .sec-endereco h1 {
+      padding-right: 30px;
+      padding-bottom: 30px;
+      font-size: 16pt;
+    }
+  
+    .sec-endereco .sec-iframe {
+      padding-bottom: 200px;
+    }
+  
+    .img-contato img {
+      max-width: 80%;
+    }
+  
+    .rede-social {
+      max-width: 100%;
+      justify-content: center;
+    }
+  
+    .h1-contato h1 {
+      padding: 15px;
+      font-size: 15pt;
+    }
+  
+    #divisao-footer{ 
+        padding-bottom: 30px;
+    }
+
+    .footer-info ul {
+      padding: 6px 20px 30px 20px;
+    }
+  }

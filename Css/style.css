@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .hide-on-scroll {
+    display: block;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    position: relative; /* define posição relativa para o body */
+    background-color: #D9D9D9;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header .itens-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* definindo a largura máxima */
+    margin: 0 auto; /* centralizando horizontalmente */
+  }
+  
+  header .itens-header li {
+    padding-left: 50px;
+    list-style: none;
+  
+  }
+    
+  header .itens-header li a {
+    padding-left: 12px;
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'inter';
+    font-weight: bold;
+    color: white;
+    transition: 1s ease-in-out;
+  }
+  
+  header .itens-header li a:hover{ 
+    font-size: 13pt;
+    position: relative;
+  }
+  
+  header .itens-header li #vermelho{
+    color: #FF8080;
+  }
+  
+  header .logo img{ 
+    max-width: 85%;
+  }
+  
+  header .logo,
+  header .itens-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-h1{ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .img-h1 img{
+    max-width: 100%;
+  }
+  
+  .sec-2 { 
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sec-2 img{
+      width: 55%;
+  }
+  
+  .sec-noiva{ 
+      display: flex;
+      justify-content: center;
+  }
+  
+  .sec-noiva img{ 
+      width: 100%;    
+  }
+  
+  .sec-madrinha{ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 10px;
+  }
+  
+  .sec-madrinha img{ 
+      width: 100%;
+  }
+  
+  .sec-festa{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .sec-festa img{ 
+    width: 100%;
+    
+  }
+  
+  .linha-lateral {
+    border: 5px solid black; 
+    width: 100%; 
+  }
+  
+  .sec-historia{ 
+    padding: 10px;
+  }
+  
+  .img-nossa-hist{ 
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .img-nossa-hist img{ 
+    max-width: 55%;
+  }
+  
+  .sec-historia #h1-historia{ 
+    padding: 60px 66px;
+    font-family: 'inter';
+    font-weight: lighter;
+    font-size: 25pt;
+    color: black;
+    text-align: justify;
+  }
+  
+  .sec-historia .btn-teste { 
+    padding-left: 70px;
+  }
+  
+  .sec-historia .btn-teste #btn-saibamais{
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+    width: 200px;
+  }
+  
+  .sec-historia .btn-teste #btn-saibamais:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sec-historia .btn-teste a{ 
+    text-decoration: none;
+    font-size: 12pt;
+    color: black;
+    font-family: 'inter';
+    font-weight: bold;
+  }
+  
+  .sec-endereco{ 
+    padding-left: 100px;
+  }
+  
+  .sec-enderecoimg { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .sec-enderecoimg img{ 
+    max-width: 55%;
+  }
+  
+  .sec-endereco h1{ 
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    font-family: 'inter';
+    font-weight: lighter;
+    font-size: 20pt;
+    text-align: center;
+  }
+  
+  .sec-endereco #sec-bold-endereco{ 
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .sec-endereco .sec-iframe{ 
+    transform: translate(-50%, -50%);
+    float: right;
+    right: 100%;
+    max-height: 100%;
+    padding-bottom: 400px;
+    display:flexbox;
+  }
+  
+  .sec-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .img-contato{ 
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+  }
+  
+  .img-contato img {
+    max-width: 55%;
+  }
+  
+  .rede-social{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 40%;
+    max-height: 50%;
+  }
+  
+  .rede-social #insta { 
+    max-width: 60px;
+    max-height: 60px;
+    padding-left: 20px;
+  }
+  
+  .rede-social #zap { 
+    max-width: 60px;
+    max-height: 60px;
+    padding-left: 20px;
+  }
+  
+  .rede-social #face { 
+    max-width: 65px;
+    max-height: 65px;
+    padding-left: 20px;
+  }
+  
+  .h1-contato{ 
+    padding-right: 10px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .h1-contato h1{ 
+    font-family: 'inter', regular;
+    font-size: 20pt;
+    padding-left: 100px;
+  }
+  
+  .sec-2 #visita-final-page{ 
+    padding-bottom: 30px;
+  }
+  
+  #divisao-footer {
+    padding: 5px 0px 30px 0px;
+  }
+  
+  #divisao-footer hr{
+    height: 2px;
+    background-color: black;
+  }
+  
+  #divisao-footer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  #divisao-footer #teste1{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+  }
+  
+  #teste123{ 
+    padding: 10px 0px 10px 0px;
+    font-family: 'inter';
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  footer{ 
+    background-color: #575757;
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer .img-footer{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    max-height: 100%;
+  }
+  
+  footer .img-footer img { 
+    width: 30%;
+    height: 30%;
+  } 
+  
+  footer .footer-info ul {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .footer-info ul li{ 
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+  footer .footer-info ul li a{
+    text-decoration: none;
+    font-family: 'inter';
+    color: white;
+  }
+  
+  footer .developed p{ 
+    font-family: 'poppins';
+    font-size: 10pt;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0px 10px;
+  }
