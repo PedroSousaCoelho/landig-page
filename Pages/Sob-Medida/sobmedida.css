@@ -14,6 +14,8 @@
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    padding-left: 100px;
+    
  }
 
   header nav .logo img{ 
@@ -28,7 +30,7 @@
  }
   
  header nav .header-itens{
-    padding: 15px 0px 10px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
 header nav .header-itens ul{ 
@@ -37,6 +39,7 @@ header nav .header-itens ul{
     list-style: none;
     justify-content: center;
     text-align: center;
+    
   }
 
 header nav .header-itens ul li{ 
@@ -62,28 +65,63 @@ header .header-itens ul #vermelho{
     color: #FF8080;
 }
 
-.sec-vestnoiva{ 
-    padding-top: 5rem;
-}
+section .txt-sob h1{ 
+    padding: 1px 20px 20px 10px;
+    font-size: 14pt;
+ }    
 
-.sec-vestnoiva .img-noivas { 
+
+ section .txt-sob h1{
+    padding: 30px 66px;
+    font-family: 'inter';
+    font-weight: lighter;
+    font-size: 25pt;
+    color: black;
+    text-align: justify;
+ }
+
+ .img-sob { 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   padding-bottom: 50px;
+ }
+
+ .img-sob img{
+   max-width: 25%;
+   max-height: 25%;
+   border-radius: 40px;
+   transition: 0.3s ease-in-out;
+ }
+
+ #divisao-footer {
+    padding: 5px 0px 30px 0px;
+  }
+  
+  #divisao-footer hr{
+    height: 2px;
+    background-color: black;
+  }
+  
+  #divisao-footer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  #divisao-footer #teste1{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 160px;
-    padding-bottom: 50px;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.sec-vestnoiva .img-noivas img{ 
-    max-width: 25%;
-    max-height: 25%;
-    border-radius: 35px;
-    transition: 0.3s ease-in-out;
-}
+    padding: 5px 0px 5px 0px;
+  }
+  
+  #teste123{ 
+    padding: 10px 0px 10px 0px;
+    font-family: 'inter';
+    font-weight: lighter;
+    text-align: center;
+  }
 
 footer{ 
     background-color: #575757;

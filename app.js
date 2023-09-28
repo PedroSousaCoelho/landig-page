@@ -26,3 +26,28 @@ link4.addEventListener('click', () => {
     contato.scrollIntoView({behavior: 'smooth'})
 })
 
+const btnMobile = document.getElementById("btn-mb");
+const fecharLinks = document.querySelectorAll('.fechar');
+const nav = document.getElementById("nav");
+
+btnMobile.addEventListener('click', toggleMenu);
+
+for (let i = 0; i < fecharLinks.length; i++) {
+  fecharLinks[i].addEventListener('click', toggleFechar);
+}
+
+function toggleMenu() {
+  nav.classList.toggle('active');
+
+  for (let i = 0; i < fecharLinks.length; i++) {
+    fecharLinks[i].classList.toggle('sumir');
+  }
+}
+
+function toggleFechar() {
+  nav.classList.remove('active');
+
+  for (let i = 0; i < fecharLinks.length; i++) {
+    fecharLinks[i].classList.add('sumir');
+  }
+}

@@ -1,113 +1,175 @@
 @media (max-device-width: 680px) {
-    header .itens-header {
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    header .itens-header li {
-      padding-left: 20px;
-    }
-  
-    header .logo img {
-      max-width: 70%;
-    }
-  
-    .img-h1 img {
-      max-width: 100%;
-    }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }  
 
-    .sec-2 img {
-      width: 80%;
-    }
-  
-    .sec-noiva img {
-      width: 100%;
-    }
-  
-    .sec-madrinha img {
-      width: 100%;
-    }
-  
-    .sec-festa img {
-      width: 100%;
-    }
-  
-    .img-nossa-hist img {
-      max-width: 80%;
-    }
-  
-    .img-nossa-hist{ 
-        padding-bottom: 5px;
-    }
-
-    .sec-historia #h1-historia {
-      padding: 1px 20px 20px 10px;
-      font-size: 14pt;
-    }
-  
-    .sec-historia .btn-teste {
-        max-width: 40%;
-        max-height: 40%;;
-        padding-left: 0px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .sec-historia .btn-teste h1 { 
-        font-size: 10pt;
-    }
-  
-    .sec-historia .btn-teste #btn-saibamais {
-      padding: 8px 20px;
-      width: auto;
-    }
-  
-    .sec-historia .btn-teste a {
-      font-size: 10pt;
-    }
-  
-    .sec-endereco {
-      padding-left: 30px;
-    }
-  
-    .sec-enderecoimg{ 
-        padding-top: 20px;
-    }
-
-    .sec-enderecoimg img {
-      max-width: 80%;
-    }
-  
-    .sec-endereco h1 {
-      padding-right: 30px;
-      padding-bottom: 30px;
-      font-size: 16pt;
-    }
-  
-    .sec-endereco .sec-iframe {
-      padding-bottom: 200px;
-    }
-  
-    .img-contato img {
-      max-width: 80%;
-    }
-  
-    .rede-social {
-      max-width: 100%;
-      justify-content: center;
-    }
-  
-    .h1-contato h1 {
-      padding: 15px;
-      font-size: 15pt;
-    }
-  
-    #divisao-footer{ 
-        padding-bottom: 30px;
-    }
-
-    .footer-info ul {
-      padding: 6px 20px 30px 20px;
-    }
+  header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 240px;
+    overflow-y: hidden;
   }
+
+  header nav .logo{
+    display: flex;
+    padding-top: 38px;
+  }
+
+  header nav .logo img{ 
+    width: 300px;
+  }
+
+  header nav #btn-mobile {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    z-index: 1000;
+    padding-left: 340px;
+    position: absolute;
+  }
+
+  header nav #btn-mobile img {
+    width: 30px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  header nav .header-itens{ 
+    display: flex;
+    justify-content: end;
+  }
+
+  header nav .header-itens #menu {
+    display: block;
+    position: absolute;
+    gap: 5px;
+    width: 50%;
+    max-height: 600px;
+    top: 0px;
+    height: 0px;
+    transition: .6s;
+    background: #D9D9D9;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-radius: 0px;
+    margin-bottom: 0;
+    z-index: 1000;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+    padding-top: 10px;
+    position: absolute;
+  }
+  
+  header #nav .header-itens #menu a li {
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 10pt;
+    border: 1rem;
+  }
+
+  #nav.active {
+    display: block;
+  }
+
+  .img-h1 img {
+    max-width: 100%;
+  }
+
+  .sec-2 img {
+    width: 80%;
+  }
+
+  .sec-noiva img {
+    width: 100%;
+  }
+
+  .sec-madrinha img {
+    width: 100%;
+  }
+
+  .sec-festa img {
+    width: 100%;
+  }
+
+  .img-nossa-hist img {
+    max-width: 80%;
+  }
+
+  .img-nossa-hist {
+    padding-bottom: 5px;
+  }
+
+  .sec-historia #h1-historia {
+    padding: 1px 20px 20px 10px;
+    font-size: 14pt;
+  }
+
+  .sec-endereco {
+    padding-left: 30px;
+  }
+
+  .sec-enderecoimg {
+    padding-top: 20px;
+  }
+
+  .sec-enderecoimg img {
+    max-width: 80%;
+  }
+
+  .sec-endereco h1 {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 16pt;
+  }
+
+  .sec-endereco .sec-iframe {
+    padding-bottom: 200px;
+  }
+
+  .img-contato img {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  .rede-social {
+    max-width: 90%;
+    padding-right: 20px;
+  }
+
+  .h1-contato{ 
+    padding-top: 30px;
+    padding-right: 100px;
+  }
+
+  .h1-contato h1 {
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  #divisao-footer {
+    padding-bottom: 30px;
+  }
+
+  footer .img-footer img { 
+    width: 90%;
+  }
+
+  footer .footer-info ul li {
+    text-align: center;
+  }
+
+  footer .footer-info ul li a {
+    font-size: 10pt;
+  }
+}

@@ -1,36 +1,135 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'inter';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'inter';
 }
 
 header{ 
-    background-color: black;
-    height: 8rem;
+  background-color: #858585;
+  height: 220px;
 }
 
-header .itens-header{ 
-    padding-top: 10px;
+header nav .logo{ 
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+header nav .logo img{ 
+  width: 80%;
+}
+
+header nav #btn-mobile{ 
+  display: none;
+  justify-content: end;
+  padding: 10px 100px;
+  z-index: 1000;
+}
+
+header nav .header-itens{
+  padding: 15px 0px 10px 0px;
+}
+
+header nav .header-itens ul{ 
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+header nav .header-itens ul li{ 
+  padding-right: 30px;
+}
+
+header nav .header-itens a{ 
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 12pt;
+  font-family: 'inter';
+  font-weight: bold;
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+header nav .header-itens ul a:hover{ 
+  font-size: 17pt;
+  position: relative;
+}
+
+header .header-itens ul #vermelho{
+  color: #FF8080;
 }
 
 .sec-vestnoiva{ 
-    padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .sec-vestnoiva .img-noivas { 
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 6rem 0rem 2rem 0rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 160px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .sec-vestnoiva .img-noivas img{ 
-    max-width: 25%;
-    max-height: 25%;
-    border-radius: 30px;
-    transition: 0.3s ease-in-out;
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 35px;
+  transition: 0.3s ease-in-out;
+}
+
+footer{ 
+  background-color: #575757;
+  width: 100%;
+  height: 100%;
+}
+
+footer .img-footer{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  max-height: 100%;
+}
+
+footer .img-footer img { 
+  width: 30%;
+  height: 30%;
+} 
+
+footer .footer-info ul {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0px 30px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-info ul li{ 
+  list-style: none;
+  margin-right: 10px;
+}
+
+footer .footer-info ul li a{
+  text-decoration: none;
+  font-family: 'inter';
+  color: white;
+  font-size: 14pt;
+}
+
+footer .developed p{ 
+  font-family: 'poppins';
+  font-size: 10pt;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0px 10px;
 }
 

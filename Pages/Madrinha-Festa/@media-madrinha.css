@@ -1,0 +1,120 @@
+@media (max-device-width: 680px) {  
+  *{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  header{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 230px;
+    overflow-y: hidden;
+  }
+
+  header nav .logo{
+    padding-top: 80px;
+    padding-left: 0px;
+  }
+
+  header nav .logo img{ 
+    width: 270px;
+  }
+
+  header nav #btn-mobile {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    z-index: 1000;
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 340px;
+  }
+
+  header nav #btn-mobile img {
+    width: 50px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  header nav .header-itens{ 
+    display: flex;
+    justify-content: end;
+    text-align: center;
+  }
+
+  header nav .header-itens #menu {
+    display: block;
+    position: absolute;
+    gap: 5px;
+    width: 50%;
+    max-height: 600px;
+    top: 0px;
+    height: 0px;
+    transition: .6s;
+    background: #D9D9D9;
+    visibility: hidden;
+    overflow-y: hidden;
+
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+    z-index: 1000;
+    padding-top: 20px;
+    position: absolute;
+  }
+  
+  header #nav .header-itens #menu a li {
+    padding-top: 1px;
+    text-align: start;
+    font-size: 10pt;
+    text-align: center;
+  }
+
+  #nav.active {
+    display: block;
+  }
+
+  .img-h1 img {
+    max-width: 100%;
+  }
+
+.sec-vestnoiva{ 
+    padding-top: 3rem;
+}
+
+.sec-vestnoiva .img-noivas { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 230px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.sec-vestnoiva .img-noivas img{ 
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .img-footer img { 
+    width: 90%;
+  }
+
+  footer .footer-info ul li {
+    text-align: center;
+  }
+
+  footer .footer-info ul li a {
+    font-size: 10pt;
+  }
+
+}

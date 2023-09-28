@@ -7,70 +7,69 @@
   .hide-on-scroll {
     display: block;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     position: relative; /* define posição relativa para o body */
     background-color: #D9D9D9;
   }
   
-  header {
+  header{ 
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
+  }
+
+  header nav .logo{ 
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav .logo img{ 
+    width: 30%;
+  }
+
+  header nav #btn-mobile{ 
+    display: none;
+    justify-content: end;
+    padding: 10px 100px;
   }
   
-  header .itens-header {
+  header nav .header-itens{
+    padding: 10px 0px 10px 0px;
+  }
+
+  header nav .header-itens ul{ 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    list-style: none;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1200px; /* definindo a largura máxima */
-    margin: 0 auto; /* centralizando horizontalmente */
   }
-  
-  header .itens-header li {
-    padding-left: 50px;
-    list-style: none;
-  
-  }
-    
-  header .itens-header li a {
-    padding-left: 12px;
+
+  header nav .header-itens a{ 
     text-decoration: none;
-    font-size: 12pt;
+    padding-right: 50px;
+    font-size: 10pt;
     font-family: 'inter';
     font-weight: bold;
     color: white;
     transition: 1s ease-in-out;
   }
-  
-  header .itens-header li a:hover{ 
+
+  header nav .header-itens ul a:hover{ 
     font-size: 13pt;
     position: relative;
   }
-  
-  header .itens-header li #vermelho{
+
+  header .header-itens ul #vermelho{
     color: #FF8080;
   }
-  
-  header .logo img{ 
-    max-width: 85%;
-  }
-  
-  header .logo,
-  header .itens-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .img-h1{ 
       display: flex;
       flex-direction: column;
@@ -151,33 +150,7 @@
     text-align: justify;
   }
   
-  .sec-historia .btn-teste { 
-    padding-left: 70px;
-  }
-  
-  .sec-historia .btn-teste #btn-saibamais{
-    background-color: white;
-    text-align: center;
-    border-radius: 50px;
-    padding: 10px 30px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease-in-out;
-    width: 200px;
-  }
-  
-  .sec-historia .btn-teste #btn-saibamais:hover {
-    transform: translateY(-5px);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .sec-historia .btn-teste a{ 
-    text-decoration: none;
-    font-size: 12pt;
-    color: black;
-    font-family: 'inter';
-    font-weight: bold;
-  }
-  
+
   .sec-endereco{ 
     padding-left: 100px;
   }
@@ -186,7 +159,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
   }
   
   .sec-enderecoimg img{ 
@@ -264,15 +237,15 @@
   }
   
   .h1-contato{ 
-    padding-right: 10px;
-    display: flex;
-    justify-content: end;
+    padding-left: 100px;
+    padding-top: 15px;
+    text-align: center;
   }
   
   .h1-contato h1{ 
-    font-family: 'inter', regular;
+    font-family: 'inter';
+    font-weight: lighter;
     font-size: 20pt;
-    padding-left: 100px;
   }
   
   .sec-2 #visita-final-page{ 
@@ -342,6 +315,7 @@
     text-decoration: none;
     font-family: 'inter';
     color: white;
+    font-size: 14pt;
   }
   
   footer .developed p{ 
